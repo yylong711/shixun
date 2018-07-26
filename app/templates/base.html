@@ -1,0 +1,70 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    项目实训
+{% endblock %}
+{% block styles %}
+        <link href="{{url_for('static',filename='css/my.css')}}" type="text/css" rel="stylesheet">
+{{ super() }}
+
+{% endblock %}
+
+{% block body %}
+    <div class="bg-self">
+
+    {% block navbar %}
+
+        <nav class="navbar navbar-expand-lg bg-light">
+  <a class="navbar-brand" href="#">问答系统</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="  {{ url_for('main.index') }}">主页 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('main.record')}}">项目周报</a>
+      </li>
+      <li class="nav-item">
+        <a id="test_ajax" class="nav-link disabled" href="{{ url_for('main.show') }}">分词器效果对比</a>
+      </li>
+    </ul>
+{#    <form class="form-inline my-2 my-lg-0">#}
+{#      <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">#}
+{#      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>#}
+{#    </form>#}
+  </div>
+</nav>
+        {% endblock %}
+    <div class="offset-1 col-md-6">
+                    {% for message in get_flashed_messages()%}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" >&times;</button>
+{{ message }}
+    </div>
+    {% endfor %}
+    </div>
+
+
+            {% block content %}
+
+{% endblock %}
+
+
+    <div class="blog-footer">
+    <p class="p-0">项目实训</p>
+
+    </div>
+
+{% block scripts %}
+    <script src="{{ url_for('static',filename='js/jquery-3.2.1.min.js') }}"></script>
+{{ super() }}
+{% endblock %}
+</div>
+{% endblock %}
+
+
+
+

@@ -1,0 +1,43 @@
+
+
+    <div class="blog-header">
+        <h2 class="blog-post-title">{{ paper.lit_title }}</h2>
+        <p class="blog-post-meta">发表于 {{ paper.lit_pub_time }} </p>
+        <div class="post-headers">
+{#                                    <img class="img-rounded profile-thumbnail" src="{{ paper.author.gravatar(size=40) }}">#}
+                <a class="profile-href" href="#">{{ paper.lit_author}}</a>
+        </div>
+        <div class="blog-post">
+    {{ paper.lit_text}}
+{#    {% endif %}#}
+        </div>
+
+
+    </div>
+
+{#        <div class="col-sm-3 col-sm-offset-1 blog-sidebar side-bar-module">#}
+{#            <div class="side-bar-module sidebar-module-inset">#}
+{##}
+{#                            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>#}
+{##}
+{##}
+{#            </div>#}
+{#        <ol class="list-unstyled">#}
+{##}
+{#             <li><a href="#">March 2014</a></li>#}
+{#              <li><a href="#">February 2014</a></li>#}
+{#              <li><a href="#">January 2014</a></li>#}
+{#              <li><a href="#">December 2013</a></li>#}
+{#              <li><a href="#">November 2013</a></li>#}
+{#              <li><a href="#">October 2013</a></li>#}
+{#              <li><a href="#">September 2013</a></li>#}
+{#              <li><a href="#">August 2013</a></li>#}
+{#              <li><a href="#">July 2013</a></li>#}
+{#              <li><a href="#">June 2013</a></li>#}
+{#              <li><a href="#">May 2013</a></li>#}
+{#              <li><a href="#">April 2013</a></li>#}
+{#        </ol>#}
+{##}
+{##}
+{#        </div>#}
+{##}

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% import '_macros.html' as macros %}
+{% block content %}
+    <div class="container">
+        <h1>NLP问答系统</h1>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                {#           <br>#}
+                {#                {{ wtf.quick_form(form) }}#}
+                <form method="post" role="form" action="{{ url_for('.index') }}" class="form-group">
+                    {{ form.csrf_token }}
+                    {{ wtf.form_field(form.sentence) }}
+                    <div class="form-inline">
+                        {{ wtf.form_field(form.select) }}
+                    </div>
+                    {% if form.find_select %}
+                        <br>
+                        <div class="custom-control-inline">
+                            {{ wtf.form_field(form.find_select) }}
+                        </div>
+                        <div class="custom-control-inline">
+                            {{ wtf.form_field(form.type_select) }}
+                        </div>
+                    {% endif %}
+                    <br>
+                    <div class="form-inline">
+                        {{ wtf.form_field(form.submit) }}
+                                                                             <div class="reset_btn">
+                                            <a class="btn btn-warning" href="{{ url_for('main.reset') }}">清空</a>
+                                        </div>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+{#    不传paper值#}
+    {% if not papers %}
+        <div class="col-md-6 list-group list_result">
+            {% if sentence_result %}
+                   {% for sentence in sentence_result %}
+                          <a href="#" class="list-group-item-light ">
+                        <p class="list-group-item-text">{{ sentence }}</p>
+            <HR align=center width=540 color=#987cb9 SIZE=1>
+
+
+
+                    </a>
+
+                {% endfor %}
+
+            {% endif %}
+        </div>
+        {% else %}
+                    <div class="col-md-8">
+                                                {% include '_post.html' %}
+
+                    </div>
+
+    {% endif %}
+
+{#            </div>#}
+            {#            <div class="col-md-8 list-group">#}
+            {#                {%for text in text_result %}#}
+            {#            <p class="list-group-item-success">#}
+            {#                                {{ text.content }}#}
+            {#            </p>#}
+            {#                     <p>{{ text.paper.lit_title }}</p>#}
+            {#                     <p>{{ text.paper }}</p>#}
+            {#                {% endfor %}#}
+            {#                        </div>#}
+{#        {% endif %}#}
+        <div class="pagination">
+            {{ macros.pagination_widget(pagination,'.index') }}
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
