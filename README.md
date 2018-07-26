@@ -14,6 +14,11 @@
 - 针对电商领域的智能问答
 - 针对专业领域的垂直搜索
 
+## 算法部分
+情感分析 
+tf-idf 权重计算
+主题模型的建立
+
 
 ## 内容删除
 因为内容太大，对处理过的文本文件进行删除
@@ -27,6 +32,40 @@
 model为针对四种分词器和三种数据模型的 12个tf-idf model
 可以通过 util函数中的train_model函数来进行输出模型，训练源数据为
 分词的结果
+
+- NLP_evaluation/data 
+文件内容为分词的语料文本
+
+
+### 分词器模块
+
+#### NLP_evaluation
+
+分词器的准确率 召回率等的性能检测和判断模块
+
+
+#### nlp 
+nlp文件夹的内容为分词器模块，基于maven库
+实现了四种分词器的方法，与python端进行通讯的模块
+- Ansj_Seg = 1
+- IKAnalyzer_Seg = 2
+- Jcseg_Seg = 3
+- Jieba_Seg = 4
+
+## web模块
+#### app 文件夹
+包含web系统的orm模型创建，基于MTV模型
+model-template-view 模型
+model为数据模型
+template 文件夹负责前端的页面展示
+views.py负责业务逻辑的处理
+
+
+
+
+
+
+
 
 
 
