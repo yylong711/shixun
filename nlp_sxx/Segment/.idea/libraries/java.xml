@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene3_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene3_plugin/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene4_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene4_plugin/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene5_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene5_plugin/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene6_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene6_plugin/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene7_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_lucene7_plugin/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/plugin/ansj_solr4_plugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../ansj_seg-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

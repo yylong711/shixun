@@ -52,6 +52,10 @@ nlp文件夹的内容为分词器模块，基于maven库
 - Jcseg_Seg = 3
 - Jieba_Seg = 4
 
+### tf-idf
+segJD1.txt
+
+
 ## web模块
 #### app 文件夹
 包含web系统的orm模型创建，基于MTV模型
@@ -60,6 +64,13 @@ model为数据模型
 template 文件夹负责前端的页面展示
 views.py负责业务逻辑的处理
 
+### 项目分工
+####  nlp sxx
+宋夏昕同学完成
+#### nlp 
+李嘉琛同学完成
+#### NLP_evaluation 
+高杨同学完成
 
 
 

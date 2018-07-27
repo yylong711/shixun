@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.huaban:jieba-analysis:1.0.2" type="repository">
+    <properties maven-id="com.huaban:jieba-analysis:1.0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/huaban/jieba-analysis/1.0.2/jieba-analysis-1.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
